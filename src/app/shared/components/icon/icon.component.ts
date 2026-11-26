@@ -31,7 +31,7 @@ export class IconComponent implements OnChanges {
     const fileName = this.name.replace(/-/g, '_');
 
     this.http
-      .get(`/icons/${fileName}.svg`, {
+      .get(`assets/icons/${fileName}.svg`, {
         responseType: 'text'
       })
       .subscribe(svg => {
