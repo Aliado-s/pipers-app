@@ -1,0 +1,41 @@
+/* ==========================================
+   Pipers - Typography
+========================================== */
+
+
+$font-primary: 'Inter', sans-serif;
+$font-display: 'Poppins', sans-serif;
+
+
+/* ===== Global ===== */
+
+html,
+body {
+  font-family: $font-primary;
+}
+
+
+body,
+button,
+input,
+textarea {
+  font-family: $font-primary;
+}
+
+
+/* ===== Títulos ===== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+  font-family: $font-display;
+
+  margin: 0;
+
+  font-weight:700;
+
+}

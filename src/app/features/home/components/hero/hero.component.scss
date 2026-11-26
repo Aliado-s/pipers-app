@@ -1,0 +1,300 @@
+@use '../../styles/index' as *;
+
+
+.hero {
+
+
+    background: $nr-background;
+
+
+    padding-top: 120px;
+
+
+    padding-bottom: 120px;
+
+
+    overflow: hidden;
+
+
+}
+
+
+.hero-container {
+
+
+    max-width: $container-width;
+
+
+    margin: auto;
+
+
+    padding: 0 32px;
+
+
+    display: grid;
+
+
+    grid-template-columns: 1fr 1fr;
+
+
+    align-items: center;
+
+
+    gap: 60px;
+
+
+}
+
+
+.hero-eyebrow {
+
+
+    font-family: $font-primary;
+
+
+    font-size: 14px;
+
+
+    font-weight: 600;
+
+
+    letter-spacing: 3px;
+
+
+    color: $nr-primary;
+
+
+}
+
+
+h1 {
+
+
+    font-family: $font-display;
+
+
+    font-size: 72px;
+
+
+    line-height: 1.05;
+
+
+    color: $nr-text;
+
+
+    margin: 24px 0;
+
+
+}
+
+
+p {
+
+
+    font-family: $font-primary;
+
+
+    font-size: 20px;
+
+
+    line-height: 1.6;
+
+
+    color: $nr-text-secondary;
+
+
+    max-width: 600px;
+
+
+}
+
+
+.hero-actions {
+
+
+    display: flex;
+
+
+    gap: 16px;
+
+
+    margin-top: 40px;
+
+
+}
+
+
+.hero-visual {
+
+
+    position: relative;
+
+
+    height: 420px;
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    justify-content: center;
+
+
+}
+
+
+.glow {
+
+
+    position: absolute;
+
+
+    width: 350px;
+
+
+    height: 350px;
+
+
+    background: $nr-primary;
+
+
+    opacity: .15;
+
+
+    filter: blur(90px);
+
+
+    border-radius: 50%;
+
+
+}
+
+
+.hero-card {
+
+
+    position: relative;
+
+
+    background: $nr-surface;
+
+
+    border: 1px solid $nr-border;
+
+
+    border-radius: $radius-lg;
+
+
+    padding: 40px;
+
+
+    box-shadow: $shadow-card;
+
+
+    display: flex;
+
+
+    flex-direction: column;
+
+
+    align-items: center;
+
+
+    color: $nr-primary;
+
+
+}
+
+
+.hero-card span {
+
+
+    font-size: 70px;
+
+
+}
+
+
+.hero-logo {
+
+
+    width: 200px;
+
+
+    height: auto;
+
+
+    position: absolute;
+
+
+    top: 50%;
+
+
+    left: 50%;
+
+
+    transform: translate(-50%, -50%);
+
+
+}
+
+
+.hero-card p {
+
+
+    margin-top: 20px;
+
+
+    font-size: 18px;
+
+
+    color: $nr-text;
+
+
+}
+
+@media(max-width:900px) {
+
+
+    .hero-container {
+
+
+        grid-template-columns: 1fr;
+
+
+        text-align: center;
+
+
+    }
+
+
+    .hero-actions {
+
+
+        justify-content: center;
+
+
+    }
+
+
+    h1 {
+
+
+        font-size: 48px;
+
+
+    }
+
+
+    .hero-visual {
+
+
+        display: none;
+
+
+    }
+
+
+}

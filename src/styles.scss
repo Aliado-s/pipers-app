@@ -1,0 +1,34 @@
+@use '../../styles/index' as *;
+
+@import "@fontsource/inter/300.css";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+
+@import "@fontsource/poppins/500.css";
+@import "@fontsource/poppins/600.css";
+@import "@fontsource/poppins/700.css";
+@import "@fontsource/poppins/800.css";
+
+html {
+  scroll-behavior:smooth;
+}
+
+
+* {
+  box-sizing:border-box;
+}
+
+
+body {
+
+  margin:0;
+
+  background:$nr-background;
+
+  color:$nr-text;
+
+  font-family:$font-primary;
+
+}

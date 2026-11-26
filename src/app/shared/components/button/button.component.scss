@@ -1,0 +1,112 @@
+@use '../../styles/index' as *;
+
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 14px 28px;
+
+  border-radius: $radius-md;
+
+  font-family: $font-primary;
+  font-size: 16px;
+  font-weight: 600;
+
+  border: none;
+
+  cursor: pointer;
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    background .25s ease;
+
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+
+  &:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+  }
+
+
+}
+
+/* ===============================
+   Primario
+=============================== */
+
+.btn-primary {
+
+  background: $nr-primary;
+
+  color: $nr-background;
+
+
+  &:hover {
+
+    background: $nr-primary-hover;
+
+    box-shadow:
+      0 10px 30px rgba(59,130,246,.35);
+
+  }
+
+
+}
+
+/* ===============================
+   Secundario
+=============================== */
+
+.btn-secondary {
+
+  background: transparent;
+
+  color: $nr-text;
+
+  border:1px solid $nr-primary;
+
+
+  &:hover {
+
+    background: rgba(59,130,246,.08);
+
+    box-shadow:
+      0 10px 25px rgba(59,130,246,.15);
+
+
+  }
+
+
+}
+
+
+/* ===============================
+   Ghost
+=============================== */
+
+.btn-ghost {
+
+  background: transparent;
+
+  color: $nr-text-secondary;
+
+
+  &:hover {
+
+    color: $nr-primary;
+
+    background: rgba(59,130,246,.05);
+
+
+  }
+
+
+}

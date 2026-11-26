@@ -1,0 +1,115 @@
+@use '../../styles/index' as *;
+
+
+.card {
+
+
+  background: $nr-surface;
+
+  border:1px solid $nr-border;
+
+  border-radius:$radius-lg;
+
+  padding:32px;
+
+
+  box-shadow:$shadow-card;
+
+
+  transition:
+    transform .25s ease,
+    border-color .25s ease,
+    box-shadow .25s ease;
+
+
+  &:hover {
+
+    transform:translateY(-6px);
+
+    border-color:$nr-primary;
+
+    box-shadow:$shadow-hover;
+
+  }
+
+
+}
+
+
+
+.card-icon {
+
+
+  display:flex;
+
+  align-items:center;
+  justify-content:center;
+
+
+  width:48px;
+  height:48px;
+
+
+  border-radius:$radius-md;
+
+
+  background:rgba(57,255,20,.1);
+
+
+  color:$nr-primary;
+
+
+  margin-bottom:24px;
+
+}
+
+
+
+h3 {
+
+
+  font-family:$font-display;
+
+  color:$nr-text;
+
+  font-size:24px;
+
+  font-weight:700;
+
+
+  margin-bottom:12px;
+
+}
+
+
+
+.card-content {
+
+
+  color:$nr-text-secondary;
+
+  font-family:$font-primary;
+
+  line-height:1.6;
+
+}
+
+
+
+/* Card destacada */
+
+.card-highlight {
+
+
+  border-color:$nr-primary;
+
+
+  background:
+    linear-gradient(
+      145deg,
+      $nr-surface,
+      rgba(59,130,246,.08)
+    );
+
+
+}

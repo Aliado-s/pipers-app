@@ -1,0 +1,29 @@
+import { Component, Input } from '@angular/core';
+
+
+@Component({
+  selector: 'app-section-title',
+  standalone: true,
+  templateUrl: './section-title.component.html',
+  styleUrl: './section-title.component.scss'
+})
+export class SectionTitleComponent {
+
+
+  @Input()
+  eyebrow?: string;
+
+
+  @Input()
+  title!: string;
+
+
+  @Input()
+  description?: string;
+
+
+  @Input()
+  align: 'left' | 'center' = 'left';
+
+
+}

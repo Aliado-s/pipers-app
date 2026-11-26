@@ -1,0 +1,126 @@
+@use '../../styles/index' as *;
+
+
+.section-title {
+
+
+    max-width: 700px;
+
+
+    margin-bottom: $section-spacing;
+
+
+
+    .eyebrow {
+
+
+        display: inline-block;
+
+
+        font-family: $font-primary;
+
+        font-size: 14px;
+
+        font-weight: 600;
+
+
+        text-transform: uppercase;
+
+        letter-spacing: 2px;
+
+
+        color: $nr-primary;
+
+
+        margin-bottom: 16px;
+
+    }
+
+
+
+    h2 {
+
+
+        margin: 0;
+
+
+        font-family: $font-display;
+
+
+        color: $nr-text;
+
+
+        font-size: 48px;
+
+        line-height: 1.15;
+
+
+        font-weight: 700;
+
+
+    }
+
+
+
+    p {
+
+
+        margin-top: 20px;
+
+
+        font-family: $font-primary;
+
+
+        color: $nr-text-secondary;
+
+
+        font-size: 18px;
+
+
+        line-height: 1.7;
+
+
+    }
+
+
+
+}
+
+
+
+.center {
+
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    text-align: center;
+
+}
+
+
+@media(max-width:768px) {
+
+
+    .section-title {
+
+
+        h2 {
+
+            font-size: 36px;
+
+        }
+
+
+        p {
+
+            font-size: 16px;
+
+        }
+
+
+    }
+
+
+}

@@ -1,0 +1,28 @@
+<article class="card" [class.card-highlight]="variant === 'highlight'">
+
+
+  @if(icon){
+
+  <app-icon class="card-icon" [name]="icon" [size]="64">
+  </app-icon>
+
+  }
+
+
+  @if(title){
+
+  <h3>
+    {{title}}
+  </h3>
+
+  }
+
+
+  <div class="card-content">
+
+    <ng-content></ng-content>
+
+  </div>
+
+
+</article>
