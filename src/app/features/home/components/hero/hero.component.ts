@@ -8,8 +8,7 @@ import { IconComponent } from '../../../../shared/components/icon/icon.component
   selector: 'app-hero',
   standalone: true,
   imports: [
-    ButtonComponent, CommonModule,
-    IconComponent
+    ButtonComponent, CommonModule
   ],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'
