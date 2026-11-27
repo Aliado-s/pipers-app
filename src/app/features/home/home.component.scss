@@ -1,0 +1,196 @@
+@use '../../styles/index' as *;
+
+
+.essential-info {
+
+
+    padding: $section-spacing 0;
+
+
+    background: $nr-surface;
+
+
+}
+
+
+.essential-info .container {
+
+
+    max-width: 600px;
+
+
+    margin: auto;
+
+
+}
+
+
+.info-grid {
+
+
+    display: grid;
+
+
+    grid-template-columns: 1fr;
+
+
+    gap: $space-md;
+
+
+    margin-top: $space-md;
+
+
+}
+
+
+.info-card {
+
+
+    background: $nr-surface;
+
+
+    border: 1px solid $nr-border;
+
+
+    border-radius: $radius-md;
+
+
+    padding: $space-md;
+
+
+    text-align: center;
+
+
+}
+
+
+.info-card h3 {
+
+
+    font-size: 12px;
+
+
+    text-transform: uppercase;
+
+
+    letter-spacing: 1px;
+
+
+    color: $nr-text-secondary;
+
+
+    margin-bottom: $space-xs;
+
+
+}
+
+
+.info-card .value {
+
+
+    font-size: 20px;
+
+
+    font-weight: 600;
+
+
+    color: $nr-primary;
+
+
+}
+
+
+.contact-section {
+
+
+    padding: $section-spacing 0;
+
+
+    text-align: center;
+
+
+}
+
+
+.contact-container {
+
+
+    max-width: 600px;
+
+
+    margin: auto;
+
+
+    padding: 0 $space-md;
+
+
+}
+
+
+.contact-info {
+
+
+    margin-top: $section-spacing;
+
+
+}
+
+
+.contact-info a {
+
+
+    font-size: 16px;
+
+
+    color: $nr-primary;
+
+
+    text-decoration: none;
+
+
+    margin: 0 $space-sm;
+
+
+    display: inline-block;
+
+
+}
+
+
+.contact-info a:hover {
+
+
+    text-decoration: underline;
+
+
+}
+
+
+@media(max-width:768px) {
+
+
+    .info-grid {
+
+
+        grid-template-columns: 1fr;
+
+
+        gap: $space-md;
+
+
+    }
+
+
+    .contact-info a {
+
+
+        display: block;
+
+
+        margin: $space-sm 0;
+
+
+    }
+
+
+}
